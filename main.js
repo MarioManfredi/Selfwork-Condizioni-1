@@ -38,3 +38,38 @@ if(voto >= 0 && voto < 18){
         }
     }
 }
+
+
+// Utilizzo switch
+let v = 23;
+
+switch(true){
+
+    case v >= 0 && v < 18:
+        console.log(`Il voto ${v} è insufficiente`);
+        break;
+
+    case v >= 18 && v < 21:
+        console.log(`Il voto ${v} è sufficiente`);
+        break;    
+
+    case v >= 21 && v < 24:
+        console.log(`Il voto ${v} è buono`);
+        break; 
+    
+    case v >= 24 && v < 27:
+        console.log(`Il voto ${v} è distinto`);
+        break;
+
+    case v >= 27 && v <= 29:
+        console.log(`Il voto ${v} è ottimo`);
+        break;
+
+    case v == 30:
+        console.log(`Il voto ${v} è eccellente`);
+        break;
+
+    default:
+        console.log(`Il voto ${v} non è valido`);
+        break;
+}
